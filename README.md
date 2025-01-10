@@ -2,7 +2,7 @@
 
 > List of all interesting iOS tools for security purpose
 
-### Utilities
+### Helpful Tools
 
 - [itms-services](https://www.npmjs.com/package/itms-services) Getting the IPA File from an OTA Distribution Link
 
@@ -117,6 +117,7 @@ sudo ldconfig
   - [Ghidra-script](https://github.com/ghidraninja/ghidra_scripts)
 - [Cutter](https://cutter.re/)
 - [Radare2](https://rada.re/n/)
+- Hooper
 
 
 ### Dynamic Analysis
@@ -149,7 +150,7 @@ sudo ldconfig
 
 ---
 
-### Complete Framework
+### Framework
 
 - [RMS-Runtime-Mobile-Security](https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security)
 
@@ -169,6 +170,8 @@ sudo ldconfig
 - [Cydia Impactor](http://www.cydiaimpactor.com/). This tool was originally created to
 jailbreak iPhones, but has been rewritten to sign and install IPA packages to iOS devices via sideloading.
 
+---
+
 ### Resources and Tutorial
 
 - [ios-frida-objection-cheat-sheet](https://www.virtuesecurity.com/kb/ios-frida-objection-pentesting-cheat-sheet/)
@@ -176,6 +179,8 @@ jailbreak iPhones, but has been rewritten to sign and install IPA packages to iO
 - [RE-iOS-Apps](https://github.com/ivRodriguezCA/RE-iOS-Apps)
 - [iOS-Bypass-Jailbreak](https://philkeeble.com/ios/reverse-engineering/iOS-Bypass-Jailbreak/)
 - [Post-on-iOS-RE](https://philkeeble.com/categories/#ios)
+
+---
 
 ### CTF
 
