@@ -6,10 +6,10 @@
 
 - [itms-services](https://www.npmjs.com/package/itms-services) Getting the IPA File from an OTA Distribution Link
 
-```shell
-npm install -g itms-services
-itms-services -u "itms-services://?action=download-manifest&url=https://s3-ap-southeast-1.amazonaws.com/test-uat/manifest.plist" -o - > out.ipa
-```
+   ```shell
+   npm install -g itms-services
+   itms-services -u "itms-services://?action=download-manifest&url=https://s3-ap-southeast-1.amazonaws.com/test-uat/manifest.plist" -o - > out.ipa
+   ```
 
 - [ipainstaller](https://github.com/autopear/ipainstaller). The IPA can also be directly installed on the iOS device via the command line with ipainstaller
 
@@ -33,48 +33,55 @@ itms-services -u "itms-services://?action=download-manifest&url=https://s3-ap-so
 
 - [ish](https://github.com/ish-app/ish). A project to get a Linux shell running on iOS, using usermode x86 emulation and syscall translation.
 
-- [plistutil]()
+- [plistutil](https://manpages.debian.org/experimental/libplist-utils/plistutil.1.en.html)
 
-```shell
-apt install libplist-utils
-plistutil -i Info.plist -o Info_xml.plist
-```
+   ```shell
+   apt install libplist-utils
+   plistutil -i Info.plist -o Info_xml.plist
+   ```
 
-**[libimobiledevice](https://libimobiledevice.org/)**
+- [ipatool](https://github.com/majd/ipatool)
 
-Requirements
+- [bagbak](https://github.com/ChiChou/bagbak). Yet another frida based iOS dumpdecrypted. Also decrypts app extensions
 
-```shell
-sudo apt-get install \
- build-essential \
- checkinstall \
- git \
- autoconf \
- automake \
- libtool-bin \
-    libzip-dev \
-    libxml2-dev \
- libcurl4-openssl-dev \
-    zlib1g-dev \
-    libfuse-dev \
- libreadline-dev \
- libusb-1.0-0-dev \
-```
 
-```shell
-sudo apt-get install \
- doxygen \
- cython
-```
 
-All modules are installed with the  following commands (in the following order)
 
-```shell
-./autogen.sh
-make
-sudo make install
-sudo ldconfig 
-```
+### [libimobiledevice](https://libimobiledevice.org/)
+
+- Requirements
+
+   ```shell
+   sudo apt-get install \
+   build-essential \
+   checkinstall \
+   git \
+   autoconf \
+   automake \
+   libtool-bin \
+      libzip-dev \
+      libxml2-dev \
+   libcurl4-openssl-dev \
+      zlib1g-dev \
+      libfuse-dev \
+   libreadline-dev \
+   libusb-1.0-0-dev \
+   ```
+
+   ```shell
+   sudo apt-get install \
+   doxygen \
+   cython
+   ```
+
+- All modules are installed with the  following commands (in the following order)
+
+   ```shell
+   ./autogen.sh
+   make
+   sudo make install
+   sudo ldconfig 
+   ```
 
 - [usbmuxd](https://github.com/libimobiledevice/usbmuxd) A socket daemon to multiplex connections from and to iOS devices.
 
@@ -96,31 +103,30 @@ sudo ldconfig
 
 - [ios-app-signer](https://github.com/DanTheMan827/ios-app-signer) This is an app for OS X that can (re)sign apps and bundle them into ipa files that are ready to be installed on an iOS device.
 
-**nowsecure**
+### nowsecure tools
 
 - [r2frida](https://github.com/nowsecure/r2frida) Radare2 and Frida better together.
 
 - [node-applesing](https://github.com/nowsecure/node-applesign) NodeJS module and commandline utility for re-signing iOS applications (IPA files).
 
-    ```npm install```
-
 - [ipa-extract-info](https://github.com/nowsecure/ipa-extract-info) Extract the Info.plist from an IPA, in node.js and the browser!
 
-**ioscontrol**
+### ioscontrol
 
 - [ios-deploy](https://github.com/ios-control/ios-deploy) Install and debug iOS apps from the command line. Designed to work on un-jailbroken devices (Requirement - MacOs)
 
 
-### Static Analysis
+## Static Analysis
 
 - [Ghidra](https://ghidra-sre.org/)
   - [Ghidra-script](https://github.com/ghidraninja/ghidra_scripts)
 - [Cutter](https://cutter.re/)
 - [Radare2](https://rada.re/n/)
 - Hooper
+- [Mara Framework](https://github.com/xtiankisutsa/MARA_Framework)
+- [ipa-extract-info](https://www.npmjs.com/package/ipa-extract-info)
 
-
-### Dynamic Analysis
+## Dynamic Analysis
 
 - [Fastbot_iOS](https://github.com/bytedance/Fastbot_iOS) Fastbot is a model-based testing tool for modeling GUI transitions to discover app stability problems. It combines machine learning and reinforcement learning techniques to assist discovery in a more intelligent way.
 
@@ -138,7 +144,21 @@ sudo ldconfig
 
 - [iOS-Tagent](https://github.com/AirtestProject/iOS-Tagent). iOS-Tagent is a project based on facebook WebDriverAgent and intend to fit Airtest Project.
 
-**nowsecure**
+- [Frida-Script-Runner](https://github.com/z3n70/Frida-Script-Runner). Frida Script Runner v1.3 is a versatile web-based tool designed for Android and iOS penetration testing purposes.
+
+- [rvi_capture](https://github.com/gh2o/rvi_capture). rvictl for Linux and Windows: capture packets sent/received by iOS devices. A utility to create packet capture dumps from iOS devices; useful for debugging network activity via Wireshark.
+
+- [iOS Developer Image](https://cgithub.com/haikieu/xcode-developer-disk-image-all-platforms/tree/master/DiskImages/iPhoneOS.platform/DeviceSupport).
+
+- [Fridax](https://github.com/NorthwaveSecurity/fridax). Fridax enables you to read variables and intercept/hook functions in Xamarin/Mono JIT and AOT compiled iOS/Android applications.
+
+- [fridump](https://github.com/Nightbringer21/fridump). A universal memory dumper using Frida.
+
+- [frida-ios-hook](https://github.com/noobpk/frida-ios-hook). A tool that helps you easy trace classes, functions, and modify the return values of methods on iOS platform.
+
+- [appmon](https://github.com/dpnishant/appmon). AppMon is an automated framework for monitoring and tampering system API calls of native macOS, iOS and android apps. It is based on Frida. [Documentation](https://dpnishant.github.io/appmon/).
+
+### nowsecure
 
 - [fsmon](https://github.com/nowsecure/fsmon) FileSystem Monitor utility that runs on Linux, Android, iOS and OSX.
 
@@ -148,18 +168,22 @@ sudo ldconfig
 
 - [frida-screenshot](https://github.com/nowsecure/frida-screenshot) Grab screenshots using Frida.
 
----
 
-### Framework
+### Useful Framework
 
 - [RMS-Runtime-Mobile-Security](https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security)
 
 - [MobSf](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
 
+- [pirogue](https://pts-project.org/). Mobile device forensics & digital investigation.
+
+- [Medusa](https://github.com/Ch0pin/medusa). Binary instrumentation framework based on FRIDA
+
+
 
 ---
 
-### Jailbreak
+## Jailbreak
 
 - [checkra1n]
 
@@ -172,7 +196,7 @@ jailbreak iPhones, but has been rewritten to sign and install IPA packages to iO
 
 ---
 
-### Resources and Tutorial
+## Resources and Tutorial
 
 - [ios-frida-objection-cheat-sheet](https://www.virtuesecurity.com/kb/ios-frida-objection-pentesting-cheat-sheet/)
 - [ios-Swift Anti-Jailbreak Bypass with Frida](https://syrion.me/blog/ios-swift-antijailbreak-bypass-frida/)
@@ -182,7 +206,12 @@ jailbreak iPhones, but has been rewritten to sign and install IPA packages to iO
 
 ---
 
-### CTF
+## iOS Forenscics
+- [ios_forensics_suite](https://github.com/piotrbania/ios_forensics_suite)
+
+---
+
+## CTF with iOS app
 
 - [NCC-CON-2018](https://ch1kpee.com/2018/01/08/ncc-con-2018-ios-ctf-solutions/)
 - [awesome-mobile-ctf](https://github.com/xtiankisutsa/awesome-mobile-CTF)
