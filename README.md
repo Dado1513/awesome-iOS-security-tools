@@ -83,6 +83,8 @@
    sudo ldconfig 
    ```
 
+- [ipsw](https://github.com/blacktop/ipsw). iOS/macOS Research Swiss Army Knife
+
 - [usbmuxd](https://github.com/libimobiledevice/usbmuxd) A socket daemon to multiplex connections from and to iOS devices.
 
 - [libplist](https://github.com/libimobiledevice/libplist) A small portable C library to handle Apple Property List files in binary or XML format.
@@ -102,6 +104,7 @@
 - [idevicerestore](https://github.com/libimobiledevice/idevicerestore) A command-line application to restore firmware files to iOS devices.
 
 - [ios-app-signer](https://github.com/DanTheMan827/ios-app-signer) This is an app for OS X that can (re)sign apps and bundle them into ipa files that are ready to be installed on an iOS device.
+- [ldid2](https://github.com/xerub/ldid)
 
 ### nowsecure tools
 
@@ -125,6 +128,9 @@
 - Hooper
 - [Mara Framework](https://github.com/xtiankisutsa/MARA_Framework)
 - [ipa-extract-info](https://www.npmjs.com/package/ipa-extract-info)
+- [DyldExtractor](https://github.com/arandomdev/DyldExtractor)
+- [apfs-fuse](https://github.com/sgan81/apfs-fuse)
+- [jtool2](https://newosxbook.com/tools/jtool.html)
 
 ## Dynamic Analysis
 
@@ -161,22 +167,16 @@
 ### nowsecure
 
 - [fsmon](https://github.com/nowsecure/fsmon) FileSystem Monitor utility that runs on Linux, Android, iOS and OSX.
-
 - [frida-trace](https://github.com/nowsecure/frida-trace) Trace APIs declaratively through Frida.
-
 - [frida-cycript](https://github.com/nowsecure/frida-cycript) This is a fork of [Cycript] 1 in which we replaced its runtime with a brand new runtime called [Mjølner] 3 powered by [Frida] 4. This enables frida-cycript to run on all the platforms and architectures maintained by [frida-core] 8.
-
 - [frida-screenshot](https://github.com/nowsecure/frida-screenshot) Grab screenshots using Frida.
 
 
-### Useful Framework
+### Framework
 
 - [RMS-Runtime-Mobile-Security](https://github.com/m0bilesecurity/RMS-Runtime-Mobile-Security)
-
 - [MobSf](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
-
 - [pirogue](https://pts-project.org/). Mobile device forensics & digital investigation.
-
 - [Medusa](https://github.com/Ch0pin/medusa). Binary instrumentation framework based on FRIDA
 
 
@@ -186,11 +186,8 @@
 ## Jailbreak
 
 - [checkra1n]
-
 - [palera1n]
-
 - [AppSync](https://cydia.akemi.ai/?page/net.angelxwind.appsyncunified). AppSync is a tweak that patches installd, allowing the installation of fake-signed IPA packages
-
 - [Cydia Impactor](http://www.cydiaimpactor.com/). This tool was originally created to
 jailbreak iPhones, but has been rewritten to sign and install IPA packages to iOS devices via sideloading.
 
@@ -203,6 +200,7 @@ jailbreak iPhones, but has been rewritten to sign and install IPA packages to iO
 - [RE-iOS-Apps](https://github.com/ivRodriguezCA/RE-iOS-Apps)
 - [iOS-Bypass-Jailbreak](https://philkeeble.com/ios/reverse-engineering/iOS-Bypass-Jailbreak/)
 - [Post-on-iOS-RE](https://philkeeble.com/categories/#ios)
+- [iOS-Reverse-Engineering](https://github.com/GhidraEnjoyr/iOS-Reverse-Engineering)
 
 ---
 
