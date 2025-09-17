@@ -132,6 +132,7 @@
 - [apfs-fuse](https://github.com/sgan81/apfs-fuse)
 - [jtool2](https://newosxbook.com/tools/jtool.html)
 - [jtool.ELF64](https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/master/mobsf/StaticAnalyzer/tools/ios/jtool.ELF64)
+- [disarm](https://newosxbook.com/tools/disarm.html)
 
 ## Dynamic Analysis
 
